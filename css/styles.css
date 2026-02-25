@@ -328,3 +328,31 @@ body {
   font-size: .75rem;
   font-weight: 600;
 }
+
+/* WhatsApp FAB */
+.whatsapp-fab {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.2rem;
+  width: 52px;
+  height: 52px;
+  background: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, .4);
+  z-index: 300;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+}
+
+.whatsapp-fab:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, .45);
+}
+
+.whatsapp-fab i {
+  font-size: 1.6rem;
+  color: #fff;
+}

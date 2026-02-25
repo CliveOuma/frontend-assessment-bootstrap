@@ -244,6 +244,26 @@
                 </footer>
         </main>
     </div>
+    <!-- WhatsApp-->
+    <a class="whatsapp-fab" href="https://wa.me/" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+    <!-- Toast -->
+    <div class="toast-container position-fixed bottom-0 start-50 translate-middle-x p-3" style="z-index:1100">
+        <div id="liveToast" class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <i class="bi bi-person-fill"></i>
+                <strong class="me-auto ms-1" id="toastTitle"></strong>
+                <button type="button" class="btn-close btn-close-white ms-2" data-bs-dismiss="toast"
+                    aria-label="Close"></button>
+            </div>
+            <div class="toast-body" id="toastBody">
+                <i class="bi bi-graph-up-arrow"></i>
+                <span id="toastMsg"></span>
+            </div>
+        </div>
+    </div>
+
 
     </div><!-- /container -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
