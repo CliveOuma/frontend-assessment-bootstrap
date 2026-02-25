@@ -229,6 +229,93 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="membershipModal" tabindex="-1" aria-labelledby="membershipModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="membershipModalLabel">
+                        <i class="bi bi-patch-check-fill"></i> Join a Membership
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="formSection">
+                        <p style="font-size:0.8rem;color:var(--text-muted);margin-bottom:1.1rem;">
+                            Complete the form below to begin your financial journey with Fourfront Management.
+                        </p>
+                        <form id="membershipForm" novalidate>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="fullName">
+                                    <i class="bi bi-person-fill"></i> Full Name *
+                                </label>
+                                <input type="text" class="form-control" id="fullName" placeholder="e.g. Jane Muthoni" />
+                                <div class="invalid-feedback">
+                                    <i class="bi bi-exclamation-circle-fill"></i> Please enter your full name (at least
+                                    3 characters).
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="emailAddr">
+                                    <i class="bi bi-envelope-fill"></i> Email Address *
+                                </label>
+                                <input type="email" class="form-control" id="emailAddr"
+                                    placeholder="jane@example.com" />
+                                <div class="invalid-feedback">
+                                    <i class="bi bi-exclamation-circle-fill"></i> Please enter a valid email address.
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="phoneNum">
+                                    <i class="bi bi-telephone-fill"></i> Phone Number *
+                                </label>
+                                <input type="tel" class="form-control" id="phoneNum" placeholder="+254 700 000 000" />
+                                <div class="invalid-feedback">
+                                    <i class="bi bi-exclamation-circle-fill"></i> Please enter a valid phone number.
+                                </div>
+                            </div>
+
+                            <div class="mb-1">
+                                <label class="form-label" for="planSelect">
+                                    <i class="bi bi-layers-fill"></i> Membership Plan *
+                                </label>
+                                <select class="form-select" id="planSelect">
+                                    <option value="">-- Choose a plan --</option>
+                                    <option value="foundation">Foundation Membership</option>
+                                    <option value="economy">Economy Membership</option>
+                                </select>
+                                <div class="invalid-feedback" id="planError">
+                                    <i class="bi bi-exclamation-circle-fill"></i> Please select a membership plan.
+                                </div>
+                            </div>
+
+                            <div class="plan-preview" id="planPreview"></div>
+                        </form>
+                    </div>
+
+                    <div class="success-msg" id="successSection">
+                        <i class="bi bi-patch-check-fill check-icon"></i>
+                        <p class="s-title" id="successTitle">Welcome aboard!</p>
+                        <p class="s-sub" id="successSub">Your application has been received. We'll be in touch shortly.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="modal-footer" id="modalFooter">
+                    <button type="button" class="btn-outline-muted" data-bs-dismiss="modal">
+                        <i class="bi bi-x-circle"></i> Cancel
+                    </button>
+                    <button type="button" class="btn-gold" onclick="submitForm()">
+                        <i class="bi bi-send-fill"></i> Apply Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
