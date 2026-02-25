@@ -26,7 +26,6 @@ body {
   background: #1a1a1a;
   color: var(--text-light);
   min-height: 100vh;
-  overflow-y: hidden;
 }
 
 /* DESKTOP NAVBAR */
@@ -266,6 +265,10 @@ body {
   line-height: 1;
 }
 
+.text-gold {
+  color: #b8902a !important;
+}
+
 .leader-name {
   font-size: 0.75rem;
   font-weight: 600;
@@ -283,4 +286,45 @@ body {
   top: 56px;
   height: calc(100vh - 56px);
   overflow-y: auto;
+}
+
+/* ── Accordion colour overrides ── */
+.accordion-button.gold-hd {
+  background: var(--gold) !important;
+  color: #111 !important;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  font-size: .85rem;
+}
+
+.accordion-button.slate-hd {
+  background: #5a6070 !important;
+  color: #fff !important;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  font-size: .85rem;
+}
+
+.accordion-button::after,
+.accordion-button:not(.collapsed)::after {
+  filter: invert(1) brightness(2);
+}
+
+/* ── Details banner ── */
+.banner-cta {
+  background: var(--gold);
+  color: #111;
+  font-weight: 600;
+  font-size: .83rem;
+  cursor: pointer;
+}
+
+/* ── Footer ── */
+.site-footer {
+  background: var(--gold);
+  color: #111;
+  font-size: .75rem;
+  font-weight: 600;
 }

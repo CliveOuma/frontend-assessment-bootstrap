@@ -165,8 +165,89 @@
                         </div>
 
                     </div>
-                    <script
-                        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-                    <script src="js/scripts.js"></script>
+                    <div class="col-12 col-lg-6 d-flex flex-column gap-3">
+
+                        <div class="card border-0" style="background:var(--card-bg);">
+                            <div class="card-body">
+                                <h5 class="font-serif fw-bold mb-2 text-gold">Now let's make you great!</h5>
+                                <p class="small fst-italic text-gold mb-2">
+                                    You have shown us where you are doing well and where we can support you to be great!
+                                </p>
+                                <p class="small text-light mb-0">
+                                    From your profile we recommend these memberships. Pick one that fits you best and
+                                    start your financial adventure.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- MEMBERSHIPS — Bootstrap accordion component -->
+                        <div class="accordion" id="membershipAccordion">
+
+                            <div class="accordion-item border-0 rounded-3 overflow-hidden mb-2"
+                                style="background:var(--card-bg);">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button gold-hd rounded-top-3" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseFoundation"
+                                        aria-expanded="true" aria-controls="collapseFoundation">
+                                        FOUNDATION <span class="fw-normal ms-2"
+                                            style="font-size:.8rem;text-transform:none;">Membership</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseFoundation" class="accordion-collapse collapse show"
+                                    data-bs-parent="#membershipAccordion">
+                                    <div class="accordion-body small text-light" style="background:#333;">
+                                        We invest for you, in shares and in the Mansa-X global fund. Service is free
+                                        online
+                                        with your personal representative, but service in the office may have extra
+                                        charges.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item border-0 rounded-3 overflow-hidden"
+                                style="background:var(--card-bg);">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed slate-hd rounded-top-3" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseEconomy"
+                                        aria-expanded="false" aria-controls="collapseEconomy">
+                                        ECONOMY <span class="fw-normal ms-2"
+                                            style="font-size:.8rem;text-transform:none;">Membership</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseEconomy" class="accordion-collapse collapse"
+                                    data-bs-parent="#membershipAccordion">
+                                    <div class="accordion-body small text-light" style="background:#333;">
+                                        We will invest your money for you at a guaranteed rate with the Mansa-X global
+                                        fund.
+                                        Service is free online with your personal representative, but service in the
+                                        office
+                                        may have extra charges.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- DETAILS BANNER-->
+                        <div class="alert banner-cta rounded-3 d-flex align-items-center justify-content-center gap-2 mb-0"
+                            role="button">
+                            <i class="bi bi-info-circle-fill"></i>
+                            A closer look at the membership details is available here
+                        </div>
+
+                    </div>
+                </div>
+                <!-- FOOTER -->
+                <footer
+                    class="site-footer text-center py-2 mt-4 rounded-3 d-flex align-items-center justify-content-center gap-2">
+                    Fourfront Management 2025. All Rights Reserved.
+                </footer>
+        </main>
+    </div>
+
+    </div><!-- /container -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>
