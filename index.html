@@ -52,7 +52,121 @@
             <li><a href="#" onclick="closeMenu(event)"><i class="bi bi-box-arrow-right"></i> Logout</a></li>
         </ul>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <!-- MAIN CONTENT -->
+    <div class="d-flex">
+
+        <!-- SIDEBAR — hidden below lg breakpoint -->
+        <aside class="sidebar d-none d-lg-flex flex-column py-3">
+
+            <p class="text-uppercase text-secondary px-3 mb-1"
+                style="font-size:.65rem;letter-spacing:.1em;font-weight:700;">Menu</p>
+            <ul class="nav flex-column mb-2">
+                <li class="nav-item"><a class="nav-link active text-gold ps-3" href="#"><i
+                            class="bi bi-house-fill me-2"></i>Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white ps-3" href="#"><i
+                            class="bi bi-bar-chart-line-fill me-2"></i>My Investments</a></li>
+                <li class="nav-item"><a class="nav-link text-white ps-3" href="#"><i
+                            class="bi bi-trophy-fill me-2"></i>Leaderboard</a></li>
+                <li class="nav-item"><a class="nav-link text-white ps-3" href="#"><i
+                            class="bi bi-bell-fill me-2"></i>Notifications</a></li>
+            </ul>
+
+            <p class="text-uppercase text-secondary px-3 mb-1 mt-2"
+                style="font-size:.65rem;letter-spacing:.1em;font-weight:700;">Account</p>
+            <ul class="nav flex-column mb-3">
+                <li class="nav-item"><a class="nav-link text-white ps-3" href="#"><i
+                            class="bi bi-person-circle me-2"></i>Profile</a></li>
+                <li class="nav-item"><a class="nav-link text-white ps-3" href="#"><i
+                            class="bi bi-gear-fill me-2"></i>Settings</a></li>
+                <li class="nav-item"><a class="nav-link text-white ps-3" href="#"><i
+                            class="bi bi-box-arrow-right me-2"></i>Logout</a></li>
+            </ul>
+
+            <div class="px-3 mt-auto">
+                <button class="btn bg-gold text-dark fw-bold w-100" onclick="openModal()">
+                    <i class="bi bi-patch-check-fill me-1"></i>Join Membership
+                </button>
+            </div>
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="flex-grow-1 p-3 p-lg-4" style="min-height:calc(100vh - 56px);">
+            <div class="container-fluid px-0" style="max-width:960px;">
+
+                <div class="row g-3">
+
+                    <!--LEFT COLUM-->
+                    <div class="col-12 col-lg-6 d-flex flex-column gap-3">
+
+                        <!-- PROFILE-->
+                        <div class="card border border-warning" style="background:var(--card-bg);">
+                            <div class="card-body d-flex align-items-center gap-3">
+                                <img src="./assets/pic1.jpg" alt="Michael" class="avatar" />
+                                <div>
+                                    <h5 class="font-serif text-white mb-1">Michael</h5>
+                                    <p class="mb-0 small text-light">You've officially joined your first investment
+                                        knowledge club!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- LEADERBOARD-->
+                        <div class="card border-0" style="background:var(--card-bg);">
+                            <div class="card-body">
+
+                                <div class="row g-3">
+
+                                    <div class="col-6">
+                                        <div class="rounded-3 p-2 h-100" style="background:#f9d4d4;cursor:pointer;"
+                                            onclick="leaderToast('Benard Makodingo',350)">
+                                            <div class="d-flex align-items-center gap-2 mb-2">
+                                                <img src="./assets/pic2.jpg" alt="Benard" class="avatar-sm" />
+                                                <span class="leader-name">Benard<br>Makodingo</span>
+                                            </div>
+                                            <div class="leader-score">350</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <div class="rounded-3 p-2 h-100" style="background:#d4edcc;cursor:pointer;"
+                                            onclick="leaderToast('klgSmall Foot',225)">
+                                            <div class="d-flex align-items-center gap-2 mb-2">
+                                                <img src="./assets/pic3.jpg" alt="klgSmall Foot" class="avatar-sm" />
+                                                <span class="leader-name">klgSmall<br>Foot</span>
+                                            </div>
+                                            <div class="leader-score">225</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <div class="rounded-3 p-2 h-100" style="background:#f5e8c0;cursor:pointer;"
+                                            onclick="leaderToast('Caroline Likhoi',117)">
+                                            <div class="d-flex align-items-center gap-2 mb-2">
+                                                <img src="./assets/pic4.jpg" alt="Caroline" class="avatar-sm" />
+                                                <span class="leader-name">Caroline<br>Likhoi</span>
+                                            </div>
+                                            <div class="leader-score">117</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <div class="rounded-3 p-2 h-100" style="background:#f9d4d4;cursor:pointer;"
+                                            onclick="leaderToast('Caroline Likhoi',321)">
+                                            <div class="d-flex align-items-center gap-2 mb-2">
+                                                <img src="./assets/pic4.jpg" alt="Caroline" class="avatar-sm" />
+                                                <span class="leader-name">Caroline<br>Likhoi</span>
+                                            </div>
+                                            <div class="leader-score">321</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <script
+                        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+                    <script src="js/scripts.js"></script>
 </body>
 </html>
